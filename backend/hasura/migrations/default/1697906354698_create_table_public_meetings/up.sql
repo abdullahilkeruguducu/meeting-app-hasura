@@ -1,0 +1,1 @@
+CREATE TABLE "public"."meetings" ("id" serial NOT NULL, "title" text NOT NULL, "meeting_date" date NOT NULL, "created_at" date NOT NULL, "updated_at" date NOT NULL, "user_id" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE restrict ON DELETE cascade);
